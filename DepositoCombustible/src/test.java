@@ -33,7 +33,10 @@ class test {
 
 	@Test
 	void testGetDepositoMax() {
-		fail("Not yet implemented");
+		DepositoCombustible tank = new DepositoCombustible(40.0,0.0);
+        double nivelMax = tank.getDepositoMax();
+        assertEquals(40.0,nivelMax);
+
 	}
 
 	@Test
