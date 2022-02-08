@@ -26,7 +26,9 @@ class test {
 
 	@Test
 	void testGetDepositoNivel() {
-		fail("Not yet implemented");
+		DepositoCombustible tank = new DepositoCombustible(40.0,0.0);
+        double nivel = tank.getDepositoNivel();
+        assertEquals(0.0,nivel);
 	}
 
 	@Test
