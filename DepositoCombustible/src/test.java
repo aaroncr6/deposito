@@ -41,7 +41,11 @@ class test {
 
 	@Test
 	void testEstaLleno() {
-		fail("Not yet implemented");
+		DepositoCombustible tank = new DepositoCombustible(40.0,0.0);
+		tank.fill(40.0);
+        boolean nivel = tank.estaLleno();
+        assertTrue(nivel);
+
 	}
 
 	@Test
